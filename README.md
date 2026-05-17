@@ -20,10 +20,11 @@ A Chrome Extension that automates form filling for MeroShare IPO applications us
 ## 🖼️ Screenshots
 
 ### Profile Manager
-![Profile Manager](screenshots/options.png)
+![Profile Manager](screenshots/Options_1.png)
+![Profile Manager](screenshots/Options_2.png)
 
 ### Auto Fill Popup
-![Popup](screenshots/popup.png)
+![Popup](screenshots/Apply_page.png)
 
 ---
 
@@ -37,7 +38,30 @@ A Chrome Extension that automates form filling for MeroShare IPO applications us
 6. Select `/extension` folder
 
 ---
+## 2️⃣ Add Profiles (Option Page)
+### Open the extension options page
+1. Right-click extension → Options
+2. OR open from extension details
+3. Add a new profile:
+     BOID (16-digit number),
+   Name,
+   Bank Name (must match MeroShare exactly),
+   Account Number,
+   CRN Number,
+   Default Kitta
+4. Click Save Profile
+---
+## 📥 Optional: Import from Excel
+### Open Profile Manager (Options page)
+1. Click Download Template
+2. Fill Excel file (do NOT change headers)
+3. Click Import Profiles
 
+#### ⚠ Important:
+
+1. BOID, Account No, CRN must be TEXT format in Excel
+2. Do NOT use scientific format (e.g. 1.2E+15)
+---
 ## 📊 Excel Import Format
 
 | boid | name | bank | accountNo | crn | quantity |
