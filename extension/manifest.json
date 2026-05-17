@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "MeroShare AutoFill Pro",
+  "version": "2.0",
+
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+
+  "host_permissions": [
+    "https://meroshare.cdsc.com.np/*"
+  ],
+
+  "options_page": "options/options.html",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://meroshare.cdsc.com.np/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}

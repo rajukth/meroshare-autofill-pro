@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>MeroShare Profiles</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📊 Profile Manager</h1>
+
+    <!-- FORM -->
+    <form action="#" id="profileForm">
+    <div class="card">
+
+        <h2>Add / Edit Profile</h2>
+
+        <div class="grid">
+
+            <input id="boid" placeholder="BOID" />
+            <input id="name" placeholder="Full Name" />
+            <input id="bank" placeholder="Bank Name" />
+            <input id="account" placeholder="Account No" />
+            <input id="crn" placeholder="CRN" />
+            <input id="qty" placeholder="Default Kitta" />
+
+        </div>
+
+        <button id="saveBtn">💾 Save Profile</button>
+
+    </div>
+    </form>
+    <div class="card import-card">
+
+        <!-- TOP BAR -->
+        <div class="import-header">
+
+            <h2>📥 Import Excel</h2>
+
+            <button id="downloadTemplateBtn" class="btn-outline">
+                📄 Download Template
+            </button>
+
+        </div>
+
+        <!-- CENTER SECTION -->
+        <div class="import-body">
+
+            <input type="file" id="excelFile" accept=".xlsx,.xls" />
+
+            <button id="importBtn" class="btn-primary">
+                Import Profiles
+            </button>
+
+        </div>
+
+    </div>
+    <!-- LIST -->
+    <div class="card">
+
+        <h2>Saved Profiles</h2>
+
+        <div id="list"></div>
+
+    </div>
+
+</div>
+<script src="libs/xlsx.full.min.js"></script>
+<script src="options.js"></script>
+</body>
+</html>
